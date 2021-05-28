@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "pcb-racknex"
-Date "2021-05-27"
-Rev "1.0"
+Date "2021-05-28"
+Rev "2.0"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-racknex"
 Comment2 ""
@@ -514,4 +514,128 @@ Text Notes 5100 4650 0    50   ~ 0
 Connector LEDs
 Text Notes 7200 4600 0    50   ~ 0
 Connector On/Off
+$Comp
+L Timer_RTC:DS3231M U1
+U 1 1 60B0F86A
+P 9300 1900
+F 0 "U1" H 9250 1150 50  0000 C CNN
+F 1 "DS3231M" H 9300 1300 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 9300 1300 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 9570 1950 50  0001 C CNN
+	1    9300 1900
+	-1   0    0    1   
+$EndComp
+NoConn ~ 9800 1700
+NoConn ~ 9300 2300
+NoConn ~ 8800 2100
+Text Label 10100 2100 0    50   ~ 0
+GPIO27(SCL)
+Text Label 10100 2000 0    50   ~ 0
+GPIO17(SDA)
+Wire Wire Line
+	9800 2100 10100 2100
+Wire Wire Line
+	9800 2000 10100 2000
+$Comp
+L power:GND #PWR012
+U 1 1 60B18548
+P 10100 1450
+F 0 "#PWR012" H 10100 1200 50  0001 C CNN
+F 1 "GND" V 10100 1200 50  0000 C CNN
+F 2 "" H 10100 1450 50  0000 C CNN
+F 3 "" H 10100 1450 50  0000 C CNN
+	1    10100 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9300 1500 9300 1450
+Wire Wire Line
+	9300 1450 10100 1450
+$Comp
+L power:+3.3V #PWR013
+U 1 1 60B1A42B
+P 10100 2350
+F 0 "#PWR013" H 10100 2200 50  0001 C CNN
+F 1 "+3.3V" V 10100 2600 50  0000 C CNN
+F 2 "" H 10100 2350 50  0000 C CNN
+F 3 "" H 10100 2350 50  0000 C CNN
+	1    10100 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 2300 9400 2350
+Wire Wire Line
+	9400 2350 9700 2350
+Text Label 8500 1800 2    50   ~ 0
+GPIO3(ON_OFF)
+Wire Wire Line
+	8500 1800 8800 1800
+$Comp
+L Device:C C1
+U 1 1 60B20F2E
+P 9700 2500
+F 0 "C1" H 9815 2546 50  0000 L CNN
+F 1 "100nF" H 9815 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9738 2350 50  0001 C CNN
+F 3 "~" H 9700 2500 50  0001 C CNN
+	1    9700 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 2350
+Wire Wire Line
+	9700 2350 10100 2350
+$Comp
+L power:GND #PWR011
+U 1 1 60B2174E
+P 9700 2650
+F 0 "#PWR011" H 9700 2400 50  0001 C CNN
+F 1 "GND" H 9700 2450 50  0000 C CNN
+F 2 "" H 9700 2650 50  0000 C CNN
+F 3 "" H 9700 2650 50  0000 C CNN
+	1    9700 2650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7750 700  7750 2950
+Wire Notes Line
+	7750 2950 10850 2950
+Wire Notes Line
+	10850 2950 10850 700 
+Wire Notes Line
+	10850 700  7750 700 
+Text Notes 10600 2900 0    50   ~ 0
+RTC
+$Comp
+L pcb-racknex-rescue:Mounting_Hole-Mechanical-pi-template-rescue MK2
+U 1 1 60B26082
+P 1550 7200
+F 0 "MK2" H 1650 7246 50  0000 L CNN
+F 1 "M2.5" H 1650 7155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 1550 7200 60  0001 C CNN
+F 3 "" H 1550 7200 60  0001 C CNN
+	1    1550 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole T1
+U 1 1 60B34CF3
+P 2150 7200
+F 0 "T1" H 2250 7246 50  0000 L CNN
+F 1 "3" H 2250 7155 50  0000 L CNN
+F 2 "user:SMT_JLCPCB_ToolingHole" H 2150 7200 60  0001 C CNN
+F 3 "" H 2150 7200 60  0001 C CNN
+	1    2150 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole T2
+U 1 1 60B352D5
+P 2550 7200
+F 0 "T2" H 2650 7246 50  0000 L CNN
+F 1 "4" H 2650 7155 50  0000 L CNN
+F 2 "user:SMT_JLCPCB_ToolingHole" H 2550 7200 60  0001 C CNN
+F 3 "" H 2550 7200 60  0001 C CNN
+	1    2550 7200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
