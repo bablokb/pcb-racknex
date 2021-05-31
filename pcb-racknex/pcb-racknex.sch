@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "pcb-racknex"
-Date "2021-05-28"
-Rev "2.1"
+Date "2021-05-31"
+Rev "2.2"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-racknex"
 Comment2 ""
@@ -144,7 +144,7 @@ L Device:R R5
 U 1 1 60B09A71
 P 5250 2200
 F 0 "R5" V 5350 2200 50  0000 C CNN
-F 1 "2K" V 5250 2200 50  0000 C CNN
+F 1 "3K3" V 5250 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5180 2200 50  0001 C CNN
 F 3 "~" H 5250 2200 50  0001 C CNN
 	1    5250 2200
@@ -156,7 +156,7 @@ U 1 1 60B09A77
 P 6800 1550
 F 0 "J3" H 6800 2200 50  0000 C CNN
 F 1 "Conn_Fan" H 6750 2050 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 6800 1550 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6800 1550 50  0001 C CNN
 F 3 "~" H 6800 1550 50  0001 C CNN
 	1    6800 1550
 	1    0    0    -1  
@@ -188,7 +188,7 @@ L Device:R R1
 U 1 1 60B09A89
 P 4650 4400
 F 0 "R1" V 4550 4350 50  0000 L CNN
-F 1 "1K" V 4650 4350 50  0000 L CNN
+F 1 "820" V 4650 4350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 4400 50  0001 C CNN
 F 3 "~" H 4650 4400 50  0001 C CNN
 	1    4650 4400
@@ -199,7 +199,7 @@ L Device:R R2
 U 1 1 60B09A8F
 P 4650 3900
 F 0 "R2" V 4550 3850 50  0000 L CNN
-F 1 "1K" V 4650 3850 50  0000 L CNN
+F 1 "820" V 4650 3850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3900 50  0001 C CNN
 F 3 "~" H 4650 3900 50  0001 C CNN
 	1    4650 3900
@@ -210,7 +210,7 @@ L Device:R R3
 U 1 1 60B09A95
 P 4650 4150
 F 0 "R3" V 4550 4100 50  0000 L CNN
-F 1 "1K" V 4650 4100 50  0000 L CNN
+F 1 "820" V 4650 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 4150 50  0001 C CNN
 F 3 "~" H 4650 4150 50  0001 C CNN
 	1    4650 4150
@@ -221,7 +221,7 @@ L Device:R R4
 U 1 1 60B09A9B
 P 4650 3650
 F 0 "R4" V 4550 3600 50  0000 L CNN
-F 1 "1K" V 4650 3600 50  0000 L CNN
+F 1 "820" V 4650 3600 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4580 3650 50  0001 C CNN
 F 3 "~" H 4650 3650 50  0001 C CNN
 	1    4650 3650
@@ -404,7 +404,7 @@ U 1 1 60B4D62A
 P 6700 4000
 F 0 "J4" H 6700 3500 50  0000 C CNN
 F 1 "Conn_ON_OFF" H 6700 3700 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 6700 4000 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6700 4000 50  0001 C CNN
 F 3 "~" H 6700 4000 50  0001 C CNN
 	1    6700 4000
 	-1   0    0    1   
