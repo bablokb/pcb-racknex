@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "pcb-racknex"
-Date "2021-06-04"
-Rev "2.3"
+Date "2021-06-06"
+Rev "2.5"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-racknex"
 Comment2 ""
@@ -411,7 +411,7 @@ U 1 1 60B4D62A
 P 6700 4000
 F 0 "J4" H 6700 3500 50  0000 C CNN
 F 1 "Conn_ON_OFF" H 6700 3700 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 6700 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 6700 4000 50  0001 C CNN
 F 3 "~" H 6700 4000 50  0001 C CNN
 	1    6700 4000
 	-1   0    0    1   
